@@ -34,7 +34,6 @@
      markdown
      ranger
      spotify
-     unimpaired
      org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -94,8 +93,8 @@ before layers configuration."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   dotspacemacs-default-font '("Nitti PX"
+                               :size 20
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -200,6 +199,6 @@ layers configuration."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Nitti PX" :foundry "nil" :slant normal :weight normal :height 200 :width normal))))
+ '(default ((t (:family "Nitti PX" :foundry "nil" :slant normal :weight normal :height 100 :width normal))))
  '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
  '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil))))) 

@@ -20,6 +20,8 @@
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
+     terraform
+     react
      emacs-lisp
      clojure
      elm
@@ -184,14 +186,15 @@ layers configuration."
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance. ;; If there is more than one, they won't work right. '(ahs-case-fold-search nil t) '(ahs-default-range (quote ahs-range-whole-buffer) t) '(ahs-idle-interval 0.25 t)
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ahs-idle-timer 0 t)
- '(ahs-inhibit-face-list nil t)
+ '(ahs-inhibit-face-list nil)
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(package-selected-packages
    (quote
-    (zeal-at-point yaml-mode web-mode toc-org tagedit spotify smeargle slim-mode scss-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv ranger orgit org-repo-todo org-present org-pomodoro alert log4e gntp org-plus-contrib org-bullets olivetti mmm-mode markdown-toc markdown-mode magit-gitflow magit-gh-pulls less-css-mode jade-mode htmlize helm-spotify multi helm-gitignore request helm-dash helm-css-scss helm-company helm-c-yasnippet haml-mode gnuplot gitignore-mode github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gist gh logito pcache gh-md flycheck-pos-tip flycheck-elm flycheck evil-magit magit magit-popup git-commit with-editor emmet-mode elm-mode f diff-hl company-web web-completion-data company-statistics company-quickhelp pos-tip company clj-refactor inflections edn cider multiple-cursors paredit peg cider-eval-sexp-fu queue clojure-mode chruby bundler inf-ruby auto-yasnippet yasnippet ac-ispell auto-complete solarized-theme ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe use-package spacemacs-theme spaceline smooth-scrolling restart-emacs rainbow-delimiters quelpa popwin persp-mode pcre2el paradox page-break-lines open-junk-file neotree move-text macrostep lorem-ipsum linum-relative leuven-theme info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-args evil-anzu eval-sexp-fu elisp-slime-nav define-word clean-aindent-mode buffer-move bracketed-paste auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
+    (terraform-mode hcl-mode web-beautify uuidgen powerline rake pug-mode org-projectile org org-download mwim minitest livid-mode skewer-mode simple-httpd link-hint json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc parent-mode hide-comnt projectile github-search marshal ht flx eyebrowse evil-visual-mark-mode evil-unimpaired smartparens iedit evil-ediff anzu evil goto-chg undo-tree dumb-jump diminish company-tern dash-functional tern column-enforce-mode coffee-mode clojure-snippets hydra s highlight seq spinner pkg-info epl bind-map bind-key packed helm avy helm-core async popup package-build zeal-at-point yaml-mode web-mode toc-org tagedit spotify smeargle slim-mode scss-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv ranger orgit org-repo-todo org-present org-pomodoro alert log4e gntp org-plus-contrib org-bullets olivetti mmm-mode markdown-toc markdown-mode magit-gitflow magit-gh-pulls less-css-mode jade-mode htmlize helm-spotify multi helm-gitignore request helm-dash helm-css-scss helm-company helm-c-yasnippet haml-mode gnuplot gitignore-mode github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gist gh logito pcache gh-md flycheck-pos-tip flycheck-elm flycheck evil-magit magit magit-popup git-commit with-editor emmet-mode elm-mode f diff-hl company-web web-completion-data company-statistics company-quickhelp pos-tip company clj-refactor inflections edn cider multiple-cursors paredit peg cider-eval-sexp-fu queue clojure-mode chruby bundler inf-ruby auto-yasnippet yasnippet ac-ispell auto-complete solarized-theme ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe use-package spacemacs-theme spaceline smooth-scrolling restart-emacs rainbow-delimiters quelpa popwin persp-mode pcre2el paradox page-break-lines open-junk-file neotree move-text macrostep lorem-ipsum linum-relative leuven-theme info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-args evil-anzu eval-sexp-fu elisp-slime-nav define-word clean-aindent-mode buffer-move bracketed-paste auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
  '(ring-bell-function (quote ignore))
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -201,4 +204,4 @@ layers configuration."
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Nitti PX" :foundry "nil" :slant normal :weight normal :height 100 :width normal))))
  '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
- '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil))))) 
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
